@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronald Taquichiri</title>
+    <link rel="preload" href="./assets/img/fondo.png" as="image">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+</head>
+<body>
+
+    <div class="header__nav px-10 py-3 flex justify-between absolute w-full items-center">
+        <a href="/" class="text-white text-xl font-bold uppercase"><span class="text-yellow-500 text-4xl font-black">R</span>onald Taquichiri</a>
+        <div class="text-2xl text-white lg:hidden" onclick="openModal(event, 'modelConfirm')">&equiv;</div>
+        <nav class="header__links hidden text-white uppercase lg:flex gap-10 text-xl">
+            <a href="proyectos.html" class="nav__link">Proyectos</a>
+            <a href="#servicios" class="nav__link">Servicios</a>
+            <a href="#contacto" class="nav__link">Contacto</a>
+        </nav>
+    </div>
+
+    <header class="header h-[32rem] lg:h-screen bg-[url('assets/img/fondo.png')] bg-no-repeat bg-cover">
+
+        <!-- <p class="text__header text-white w-4/6 lg:w-2/6 text-center mx-auto pt-80 lg:pt-96 lg:text-3xl">Transforma tu presencia online y alcanza el <span>exito digital</span></p> -->
+    </header>
+
+    <div 
+        class="h-11 -mt-11" 
+        style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI0ZGRkZGRiI+PHBhdGggZD0iTTEyODAgMTQwVjBTOTkzLjQ2IDE0MCA2NDAgMTM5IDAgMCAwIDB2MTQweiIvPjwvZz48L3N2Zz4=')"
+    ></div>
+
+    <section class="conocenos pt-28 pb-40">
+        <div class="conocenos__container lg:pl-44">
+
+            <img class="w-2/4 block mx-auto" src="https://estudiocrear.com/wp-content/uploads/2023/09/estudio-crear-texto-1.svg" alt="" class="texto__img">
+            <div class="contenedor__texto mx-auto text-center w-5/6 px-4 lg:px-0 lg:pl-96 ">
+                
+                <p class="texto__conocenos text-indigo-700 lg:text-2xl lg:pl-72">
+                    soluciones para marcas que necesitan 
+                </p>
+                <p class="texto__conocenos font-bold text-indigo-700 lg:text-2xl lg:pl-72 mt-2">
+                    comercializar su <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-indigo-500 relative inline-block">
+                        <span class="relative text-white">producto online.</span>
+                    </span>
+                </p>
+                <p class="texto__conocenos font-bold text-right pr-12 lg:text-2xl">
+                    <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-indigo-500 relative inline-block">
+                        <span class="relative text-white">servicio online.</span>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="somos bg-indigo-700 relative">
+        <video class="absolute block w-full h-full object-cover object-top" loop="loop" autoplay="" playsinline="" muted="" id="mejs_18377844149694478_html5" preload="none" src="https://estudiocrear.com/wp-content/uploads/2023/09/estudio-crear-somos-creadores-background.mp4">
+            <source type="video/mp4" src="https://estudiocrear.com/wp-content/uploads/2023/09/estudio-crear-somos-creadores-background.mp4">
+            
+        </video>
+        <div class="somos__contenido relative py-20 lg:py-32">
+            <h2 class="somos__titulo uppercase text-6xl lg:text-8xl font-black text-white text-center borde-texto mb-6">
+                Somos Creadores
+            </h2>
+            <div class="px-6 lg:px-8">
+
+                <div class="somos__globo w-full text-center p-10 bg-[url('https://estudiocrear.com/wp-content/uploads/2023/09/somos-creadores-bg-3.svg')] lg:bg-[url('https://estudiocrear.com/wp-content/uploads/2023/09/estudio-crear-somos-creadores-texto-background.svg')] bg-no-repeat bg-center lg:w-3/5 lg:mx-auto lg:pt-40 bg-[length:100%_280px] lg:bg-[length:100%_350px] lg:px-36">
+                    <p class="somos__texto text-gray-700 lg:px-16 font-medium lg:text-lg">
+                            Nuestro diferencial es la creatividad, marcamos la importancia en la resolución de estrategias que tengan impacto directo en tus ventas y crecimiento de marca.
+                    </p>
+                    <p class="somos__texto text-indigo-900 pt-2 pb-6 font-medium">
+                        Nuestro diferencial es la creatividad
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+        
+                <a href="#contacto" class="somos__button__call btn-shadow fondo-color-btn p-4 rounded-full uppercase font-bold text-indigo-700 text-2xl inline-block">Pacta una llamada</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="animate py-28 bg-indigo-500 text-[#ffe3e2]">
+        <div class="w-5/6 lg:w-2/3 mx-auto ">
+
+            <h3 class="animate__titulo text-center text-6xl lg:text-9xl font-bold uppercase">Animate</h3>
+            <p class="animate__texto text-2xl text-center lg:text-right mt-12">a conocer nuestros servicios que harán crecer tu marca</p>
+        </div>
+    </section>
+
+
+    <main id="servicios" class="servicios space-y-20">
+
+        <div class="servicios__item px-5 lg:px-0 lg:w-4/6 m-auto">
+            <div class="flex flex-col lg:flex-row">
+                <img class="lg:w-3/5 h-80 lg:h-[40rem]" src="./assets/img/estudio-crear-publicidad-digital.webp" alt="Imagen Servicio Publicidad">
+                <div class="space-y-8 lg:space-y-0 lg:w-2/5 lg:flex lg:flex-col justify-evenly">
+                    <h3 class="text-5xl font-black uppercase text-indigo-700">Diseño para Redes Sociales</h3>
+                    <div class="bg-indigo-700 text-white p-5 space-y-5 text-xl">
+                        <p>
+                            Abrí la puerta a una comunidad que te siga y quiera estar al tanto de tus novedades, productos o servicios.
+                        </p>
+                        <p>Diseñamos el feed soñado y una increíble planificación de contenido para vos.</p>
+                    </div>
+                    <div class="mt-3">
+        
+                        <a target="_blank" href="https://wa.me/+59173909060?text=Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20diseño%20redes%20sociales" class="somos__button__call btn-shadow fondo-color-btn p-4 rounded-full uppercase font-bold text-indigo-700 text-2xl inline-block">Lo Necesito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="servicios__item px-5 lg:px-0 lg:w-4/6 m-auto">
+            <div class="flex flex-col lg:flex-row-reverse">
+                <img class="lg:w-3/5 h-80 lg:h-[40rem]" src="./assets/img/servicio-2.webp" alt="Imagen Servicio Publicidad">
+                <div class="space-y-8 lg:space-y-0 lg:w-2/5 lg:flex lg:flex-col justify-evenly">
+                    <h3 class="text-5xl font-black uppercase text-indigo-700">Desarrollo de Marca</h3>
+                    <div class="bg-indigo-700 text-white p-5 space-y-5 text-xl">
+                        <p>
+                            Desarrollo de naming e identidad visual para la correcta comunicación de tu marca. Ya sea que necesites un desarrollo de cero o trabajar en un refresh para mejorar tu presencia online.
+                        </p>
+                        
+                    </div>
+                    <div class="mt-3">
+        
+                        <a target="_blank" href="https://wa.me/+59173909060?text=Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20dise%C3%B1o%20de%20marca" class="somos__button__call btn-shadow fondo-color-btn p-4 rounded-full uppercase font-bold text-indigo-700 text-2xl inline-block">Quiero mi marca</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="servicios__item px-5 lg:px-0 lg:w-4/6 m-auto">
+            <div class="flex flex-col lg:flex-row">
+                <img class="lg:w-3/5 h-80 lg:h-[40rem]" src="./assets/img/servicio-3.webp" alt="Imagen Servicio Publicidad">
+                <div class="space-y-8 lg:space-y-0 lg:w-2/5 lg:flex lg:flex-col justify-evenly">
+                    <h3 class="text-5xl font-black uppercase text-indigo-700">Diseños para páginas Web</h3>
+                    <div class="bg-indigo-700 text-white p-5 space-y-5 text-xl">
+                        <p>
+                            Impacta a tus clientes con una página web atractiva que combine diseño visual y funcionalidad. Crea una experiencia memorable con gráficos cautivadores y una navegación intuitiva que deje una impresión duradera en tus visitantes. 
+                        </p>
+                    </div>
+                    <div class="mt-3">
+        
+                        <a target="_blank" href="https://wa.me/+59173909060?text=Quiero%20dise%C3%B1os%20para%20mi%20p%C3A1gina%20web" class="somos__button__call btn-shadow fondo-color-btn p-4 rounded-full uppercase font-bold text-indigo-700 text-2xl inline-block">Quiero mi sitio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <section class="proyectos bg-yellow-300 pt-28 pb-56">
+        <div class="proyectos__contenedor px-10 lg:px-0 lg:w-4/6 mx-auto">
+            <div class="text-center mt-3">
+        
+                <a href="proyectos.html" class="somos__button__call btn-shadow fondo-color-btn p-4 rounded-full uppercase font-bold text-indigo-700 text-2xl inline-block" >Nuestras Creaciones</a>
+            </div>
+            <div class="proyectos__grid grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-20 mt-16">
+                <div class="h-72 bg-gray-300 rounded-lg shadow-sm overflow-hidden">
+                    <img src="./assets/img/t1.png" alt="" class="object-cover">
+                </div>
+                <div class="h-72 bg-gray-300 overflow-hidden">
+                    <img src="./assets/img/t2.png" alt="" class="object-cover">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="baner__olas h-20 -mt-20" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTY0MCAxNDBDMjg2LjU0IDE0MCAwIDAgMCAwaDEyODBTOTkzLjQ2IDE0MCA2NDAgMTQweiIvPjwvZz48L3N2Zz4='); transform: scale(1, -1);"></div>
+    
+    <section id="contacto" class="contacto mt-14 mb-32">
+        <div class="contacto__container px-4 lg:px-0 lg:w-4/6 mx-auto">
+            <h2 class="text-4xl lg:text-6xl text-fuchsia-700 font-bold text-center">Comenzar <span class="block">es simple</span></h2>
+            <p class="text-violet-900 text-sm lg:text-2xl text-center lg:px-32 mt-9">
+                Completá el siguiente formulario podrás contarnos más sobre tu marca y nos pondremos en contacto a la brevedad
+            </p>
+            <form action="" class="bg-fuchsia-100 rounded-lg p-8 lg:p-12 mt-8 lg:mt-12">
+                <div >
+                    <label for="" class="block text-md lg:text-xl mb-2 font-medium text-violet-900">Nombre y apellido</label>
+                    <input type="text" class="w-full p-3 rounded-lg shadow-sm text-violet-900 font-medium">
+                </div>
+
+                <div class="mt-8">
+                    <label for="" class="block text-md lg:text-xl mb-2 font-medium text-violet-900">Email</label>
+                    <input type="text" class="w-full p-3 rounded-lg shadow-sm text-violet-900 font-medium">
+                </div>
+
+                <div class="mt-8">
+                    <label for="" class="block text-md lg:text-xl mb-2 font-medium text-violet-900">
+                        Número de contacto</label>
+                    <input type="text" class="w-full p-3 rounded-lg shadow-sm text-violet-900 font-medium">
+                </div>
+
+                <div class="mt-8">
+                    <label for="" class="block text-md lg:text-xl mb-2 font-medium text-violet-900">
+                        Contanos más sobre tu marca/negocio</label>
+                    <textarea class="w-full p-3 rounded-lg shadow-sm text-violet-900 font-medium " name="" id="" rows="10"></textarea>
+                </div>
+
+
+            </form>
+            <div class="text-center mt-8 lg:-mt-3">
+        
+                <a href="" class="somos__button__call btn-shadow fondo-color-btn p-4 rounded-full uppercase font-bold text-indigo-700 text-2xl inline-block">¡EMPECEMOS!</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="redes-sociales px-10 md:px-16 lg:px-36 py-24">
+        <div class="redes__grid bg-yellow-100 py-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="h-40 lg:h-72 bg-[url('assets/img/r1.jpg')] bg-no-repeat bg-cover rounded-lg shadow-sm">
+
+            </div>
+            <div class="h-40 lg:h-72 bg-[url('assets/img/r2.png')] bg-no-repeat bg-cover rounded-lg shadow-sm">
+
+            </div>
+            <div class="h-40 lg:h-72 bg-[url('assets/img/r3.png')] bg-no-repeat bg-cover rounded-lg shadow-sm">
+
+            </div>
+            <div class="h-40 lg:h-72 bg-[url('assets/img/r4.png')] bg-no-repeat bg-cover rounded-lg shadow-sm">
+
+            </div>
+            <div class="h-40 lg:h-72 bg-[url('assets/img/r5.png')] bg-no-repeat bg-cover rounded-lg shadow-sm">
+
+            </div>
+            <div class="h-40 lg:h-72 bg-[url('assets/img/r6.png')] bg-no-repeat bg-cover rounded-lg shadow-sm">
+
+            </div>
+            <div class="h-40 lg:h-72 bg-[url('assets/img/r7.png')] bg-no-repeat bg-cover rounded-lg shadow-sm">
+
+            </div>
+            <div class="h-40 lg:h-72 bg-[url('assets/img/r8.png')] bg-no-repeat bg-cover rounded-lg shadow-sm">
+
+            </div>
+        </div>
+        <div class="bg-yellow-100 text-center pb-4">
+            <a href="" class="px-6 py-1 bg-indigo-600 inline-block text-white rounded-md">Siguenos en Facebook</a>
+        </div>
+    </section>
+
+    <footer class="footer bg-purple-900 px-16 pt-16 pb-6">
+
+
+        <div class="space-y-8 lg:space-y-0 lg:flex lg:justify-between">
+            
+            <div class="">
+                <img src="assets/img/logo2.png" alt="" class="h-32 mx-auto lg:mx-0">
+            </div>
+            
+            <div class="flex justify-center lg:flex-col gap-4 lg:justify-center lg:items-center">
+                
+                <div class="lg:flex lg:gap-5 lg:justify-center lg:items-center ">
+                    <p class="hidden lg:block text-pink-300 text-xl font-medium">+ 591 73909060</p>
+                    <img src="assets/img/whats.png" alt="" class="h-18 lg:h-14">
+                </div>
+                
+                <div class="lg:flex lg:gap-5 lg:justify-center lg:items-center">
+                    <p class="hidden lg:flex text-pink-300 text-xl font-medium">ronald_taquichiri</p>
+                    <img src="assets/img/face.png" alt="" class="h-18 lg:h-14">
+                </div>
+                
+                <div class="lg:flex lg:gap-5 lg:justify-center lg:items-center">
+                    <p class="hidden lg:flex text-pink-300 text-xl font-medium">ronaldt@gmail.com</p>
+                    <img src="assets/img/email.png" alt="" class="h-18 lg:h-14">
+                </div>
+            
+            </div>
+        </div>
+        
+        
+        <p class="text-center lg:text-right text-pink-300 pt-8">
+            <span class="border-b-2 border-pink-300">
+
+            Políticas de Privacidad
+        </span>
+    </p>
+    
+    
+    </footer>
+
+    <!-- MODAL TRABAJOS REALIZADOS -->
+    <div id="modelConfirm" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full pl-16">
+        <div class="relative h-full mx-auto shadow-xl bg-white ">
+    
+            <div class="flex justify-end p-2">
+                <button onclick="closeModal('modelConfirm')" type="button"
+                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex flex-col p-6 space-y-10">
+                <a href="/" class="border-b-2 border-pink-300 uppercase text-pink-300">Inicio</a>
+                <a href="proyectos.html" class="border-b-2 border-pink-300 uppercase text-pink-300">Proyectos</a>
+                <a href="#contacto" onclick="closeModal('modelConfirm')" class="border-b-2 border-pink-300 uppercase text-pink-300">Contacto</a>
+                <a href="#servicios" onclick="closeModal('modelConfirm')" class="border-b-2 border-pink-300 uppercase text-pink-300">Servicios</a>
+            </div>
+    
+            
+    
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    
+    <script type="text/javascript">
+        window.openModal = function(event, modalId) {
+            event.preventDefault();
+            document.getElementById(modalId).style.display = 'block'
+            document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden')
+        }
+    
+        window.closeModal = function(modalId) {
+            document.getElementById(modalId).style.display = 'none'
+            document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
+        }
+    
+        // Close all modals when press ESC
+        document.onkeydown = function(event) {
+            event = event || window.event;
+            if (event.keyCode === 27) {
+                document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
+                let modals = document.getElementsByClassName('modal');
+                Array.prototype.slice.call(modals).forEach(i => {
+                    i.style.display = 'none'
+                })
+            }
+        };
+
+        /*const swiper = new Swiper(".swiper", {
+            // Optional parameters
+            slidesPerView: "auto",
+            spaceBetween: 15,
+            loop: true,
+            autoplay: false,
+    
+            // Navigation arrows
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });*/
+    </script>
+
+
+</body>
+</html>

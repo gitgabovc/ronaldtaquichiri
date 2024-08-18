@@ -1,0 +1,22 @@
+html{
+    scroll-behavior: smooth;
+}
+.btn-shadow {
+    box-shadow: -10px 10px 0px 0px #635e88;
+}
+
+.fondo-color-btn,
+.redes-sociales{
+    background-color: rgb(234, 187, 46);
+}
+
+.borde-texto{
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 3px rgb(79 70 229 / 1);
+}
+
+@media (min-width:768px){
+    .aaa {
+        object-position: 0px -166px;
+    }
+}
